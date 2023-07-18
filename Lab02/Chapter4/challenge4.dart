@@ -6,7 +6,7 @@ int fun(int n){
 }
 void main(){
 
-  int n = 2;
+  int n = 6;
   int ans = fun(n);
   print("$n th Fibbo Number is : $ans");  
 

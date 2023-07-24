@@ -11,7 +11,7 @@ void main(List<String>args){
     print("\n");
     return result;
   }
-  int result = repeatTask(4 , (x)=>x*x);
+  int result = repeatTask(4 , (x) => x*x);
   print(result);
 
 }

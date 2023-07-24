@@ -69,18 +69,36 @@ class MyClass{
 */
 class User{
 
-  int _id;
-  String _name;
+  // int id;
+  // String name;
 
   // User({int id = 0 , String name = 'anonymous'}) : _id = id , _name = name{
   //   print('User Name is $_name');
   // }
 
-  User({int id = 0 , String name = 'anonymous'}) : assert(id >= 0) , assert(name.isNotEmpty),
-  _id = id,
-  _name = name;
+//   User({int id = 0 , String name = 'anonymous'}) : assert(id >= 0) , assert(name.isNotEmpty),
+//   _id = id,
+//   _name = name;
+// }
+  // User({int id = 0 , String name = 'anonymous'});
 
-}
+  // User._({required this.id , required this.name});
+
+  // User({required  this.id , required this.name});
+
+  // factory User.fromJson(Map<String , Object>json) {
+  //   final userId = json['id'] as int;
+  //   final userName = json['name'] as String;
+  //   return User(id:userId , name:userName);
+  // }
+
+  // factory User.ray({required int id , required String name}){
+  //   return User._(id : id , name : name);
+  // }
+
+
+
+
 
 // // class obj{
 //   int id = 0;
@@ -89,8 +107,20 @@ class User{
 //     this.id = id;
 //     this.name = name;
 //   }
-// }
+  // final int _id;
+  // final String _name;
 
+  // User({required int id, required String name}) 
+  // : _id = 0,
+  // _name = "String";
+
+  // int get id => _id;
+  // String get name => name;
+
+  User._();
+  static final User instance = User._();
+
+}
 void main(){
   // var anonymousUser = User.anonymous();
   // print(anonymousUser.name);
@@ -108,9 +138,25 @@ void main(){
   // vicki.name = 'Nefarious Hacker';
   // print(vicki.name);
 
-  var user = new User(id:21 , name:"Any");
-  // var object = new obj(21 , "Mann");
-  final vicki = User(id:24 , name:"Any");
-  vicki._name = 'New_Name';
-  print(vicki._name);
+  // var user = new User(id:21 , name:"Any");
+  // // var object = new obj(21 , "Mann");
+  // final vicki = User(id:24 , name:"Any");
+  // vicki._name = 'New_Name';
+  // print(vicki._name);
+
+  // var obj = User(id : -1 , name : "hi");//Assert Exception 
+  // print(obj._id);
+
+  
+  // print(User(id: 1 , name:"Hello"));
+  // var obj = User.ray(id : 1 , name : "My Name");
+  // print(obj.id);
+
+  // final map = {'id': 10 , 'name' : 'Manda'};
+  // final manda = User.fromJson(map);
+  // print(manda.name);
+
+  final mySingleton = User.instance;
+  
+
 }

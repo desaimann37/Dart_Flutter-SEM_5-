@@ -5,8 +5,6 @@
   Lab04_1 & Lab04_2
 */
 
-
-
 void main(){
 
   //Collections in Dart
@@ -107,7 +105,7 @@ void main(){
 
   //map() --> Mapping Over Collection : 
   const numbers = [1 , 2 , 3 , 4];
-  final squares = numbers.map((n)=>n * n);
+  final squares = numbers.map((n) => n * n);
   // print(squares);
 
   // print(squares.toList());
@@ -127,11 +125,11 @@ void main(){
 
   //fold() --> Same As reduce()
   final total_new = amounts.fold(0 , (int sum , ele) => sum + ele);
-  // print(total_new);
+  print(total_new);
 
   //sort() :
   desserts.sort();//-->List<String>
-  // print(desserts);
+  print(desserts);
 
   
   var obj = desserts.reversed;//-->Iterable<String>
@@ -144,7 +142,7 @@ void main(){
   //Combining Higher Order Methods : 
   final bigTallDesserts = desserts.where((dessert) => dessert.length > 5).map((dessert) => dessert.toUpperCase());
 
-  print(bigTallDesserts);
+  // print(bigTallDesserts);
 
 
 }

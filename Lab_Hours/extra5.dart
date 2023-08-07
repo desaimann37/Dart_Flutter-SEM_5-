@@ -23,7 +23,15 @@
 
 // }
 
-
+extension on String{
+  String get encoded{
+    final output = StringBuffer();
+    for(final codePoint in runes){
+      output.writeCharCode(codePoint+1);
+    }
+    return output.toString();
+  }
+}
 void main(){
   //Advanced Classes : 
 
@@ -40,7 +48,7 @@ void main(){
 
   map['EFG'] = 3;
   map['HIJ'] = 5;
-  print(map);
+  // print(map);
 
 
   const amounts = [199 , 299 , 299 , 199 , 499];
@@ -54,13 +62,23 @@ void main(){
   // var reversed_desserts = desserts.reversed;
   // print(reversed_desserts);
 
-  const desserts = ['cake' , 'pie' , 'donuts' , 'brownies'];
-  final bigTallDesserts = desserts.where((dessert) => dessert.length > 5)
-  .map((dessert) => dessert.toUpperCase());
+  // const desserts = ['cake' , 'pie' , 'donuts' , 'brownies'];
+  // final bigTallDesserts = desserts.where((dessert) => dessert.length > 5)
+  // .map((dessert) => dessert.toUpperCase());
 
   // print(bigTallDesserts);
 
   
+  // Lab04_2 PDF : 
+  //Extension : 
+
+  final secret = 'abc'.encoded;
+  print(secret);
+  
+
+
+
+
 
 
 

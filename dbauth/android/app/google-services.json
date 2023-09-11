@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "314602030254",
+    "project_id": "authconn-33379",
+    "storage_bucket": "authconn-33379.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314602030254:android:519b9a63cb72a5c4c3593f",
+        "android_client_info": {
+          "package_name": "com.example.dbauth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjC4rUO5GYjtJVTMWojxFXgAk7KObX-Is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
